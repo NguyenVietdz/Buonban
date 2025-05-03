@@ -1,0 +1,490 @@
+/* Phần đã có trước */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #c8102e;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a00d23;
+}
+
+/* Phần mới */
+.info-section {
+  background-color: #fff;
+  padding: 4rem 2rem;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-box {
+  flex: 1 1 300px;
+  padding: 1rem 2rem;
+}
+
+.info-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.info-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-box p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* Section: Duration & Map */
+.duration-map {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.duration-map-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.duration-map .text {
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.duration-map .map {
+  flex: 1;
+  text-align: center;
+}
+
+.duration-map img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Section: City Info */
+.city-info {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.city-info h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.city-info p {
+  font-size: 1.1rem;
+  color: #555;
+}
+/* Section: City Cards */
+.city-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.city-card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: left;
+}
+
+.city-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.city-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.city-card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+.resort-section {
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resort-content {
+  background-color: rgba(255, 255, 255, 0.95);
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  font-family: "Segoe UI", sans-serif;
+  color: #000;
+}
+
+.resort-content h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.resort-content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.tour-details {
+  background-color: #f7f7f7;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.tour-details h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.tour-features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.feature {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.feature img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #444;
+}
+.itinerary-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 40px;
+  background-color: #fff;
+  gap: 40px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.itinerary-content {
+  flex: 2;
+}
+
+.timeline {
+  list-style-type: disc;
+  padding-left: 200px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.itinerary-image {
+  flex: 1;
+  text-align: center;
+}
+
+.itinerary-image img {
+  max-width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.itinerary-image p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.price-summary {
+  background-color: #f1f1f1; /* nền xám nhạt */
+  text-align: center;
+  padding: 80px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.price-summary h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.price-summary p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.guide-intro {
+  background-color: #f1f1f1;
+  padding: 60px 20px;
+}
+
+.guide-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  gap: 40px;
+}
+
+.guide-image {
+  flex: 1 1 20%;
+}
+
+.guide-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.guide-content {
+  flex: 1 1 55%;
+  color: #111;
+  font-family: Arial, sans-serif;
+}
+
+.guide-content h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.guide-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.booking-form-section {
+  background-color: #f3f3f3;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-container h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-container p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  padding: 14px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+}
+
+.booking-form button {
+  background-color: #ba131a;
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: center;
+}
+
+.booking-form button:hover {
+  background-color: #a20f16;
+}
+
+.social-icons {
+  margin-top: 40px;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+.site-footer {
+  background-color: #000;
+  color: #ccc;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.site-footer strong {
+  color: #eee;
+}
+
+.scroll-top-icon {
+  font-size: 26px;
+  margin: 20px 0;
+  color: #777;
+  cursor: pointer;
+}
+
+.made-with {
+  margin-top: 10px;
+  color: #999;
+}
+
+.create-btn {
+  margin: 20px 0;
+  padding: 10px 25px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.create-btn:hover {
+  background-color: #666;
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: #888;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.social {
+  height: 50px;
+}
