@@ -99,6 +99,7 @@ html {
   font-size: 1rem;
   line-height: 1.5;
 }
+
 /* Section: Duration & Map */
 .duration-map {
   background-color: #fff;
@@ -152,6 +153,7 @@ html {
   font-size: 1.1rem;
   color: #555;
 }
+
 /* Section: City Cards */
 .city-cards {
   display: flex;
@@ -187,6 +189,7 @@ html {
   color: #333;
   line-height: 1.5;
 }
+
 .resort-section {
   background-size: cover;
   background-position: center;
@@ -217,6 +220,7 @@ html {
   margin-bottom: 20px;
   line-height: 1.6;
 }
+
 .tour-details {
   background-color: #f7f7f7;
   padding: 80px 20px;
@@ -259,6 +263,7 @@ html {
   font-size: 14px;
   color: #444;
 }
+
 .itinerary-day {
   display: flex;
   justify-content: space-between;
@@ -295,8 +300,10 @@ html {
   margin-top: 10px;
   font-weight: bold;
 }
+
 .price-summary {
-  background-color: #f1f1f1; /* nền xám nhạt */
+  background-color: #f1f1f1;
+  /* nền xám nhạt */
   text-align: center;
   padding: 80px 20px;
   font-family: "Arial", sans-serif;
@@ -314,6 +321,7 @@ html {
   margin: 0 auto;
   line-height: 1.5;
 }
+
 .guide-intro {
   background-color: #f1f1f1;
   padding: 60px 20px;
@@ -356,6 +364,7 @@ html {
   line-height: 1.6;
   margin-bottom: 16px;
 }
+
 .booking-form-section {
   background-color: #f3f3f3;
   padding: 80px 20px;
@@ -424,6 +433,7 @@ html {
   width: 30px;
   height: 30px;
 }
+
 .site-footer {
   background-color: #000;
   color: #ccc;
@@ -485,6 +495,7 @@ html {
 .footer-links a:hover {
   text-decoration: underline;
 }
+
 .social {
   height: 50px;
 }
